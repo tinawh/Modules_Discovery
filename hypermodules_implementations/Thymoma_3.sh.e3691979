@@ -1,0 +1,10 @@
+Welcome to java/1.6.0_21
+Picked up _JAVA_OPTIONS: -Xmx76G -Xss10M
+Number of background permutations: 0
+Running Original Test...
+Number of Seeds: 928
+Finished Running Original Test.
+Finished Analyzing Original Network
+Number of Available Processors: 32
+Computing Background from 0 Random Networks
+/opt/ogs2011.11/default/spool/cn207-52/job_scripts/3691979: line 3:  2269 Aborted                 java -jar /.mounts/labs/reimandlab/private/users/thuang/HyperModules_1.0.2_CMD/HyperModulesCMD-1.0.2.jar -n /.mounts/labs/reimandlab/private/users/thuang/data_3/04-02-18/biogrid_networks/Thymoma/Thymoma_3.tsv -s /.mounts/labs/reimandlab/private/users/thuang/data_2/02-19-18/mutation_data/mut_Thymoma_hugo.csv -c /.mounts/labs/reimandlab/private/users/thuang/data_2/02-19-18/clinical_data/Thymoma_clin.csv -S 0 -t logrank > /.mounts/labs/reimandlab/private/users/thuang/data_3/hypermodules_implementations/Thymoma/Thymoma_3.txt

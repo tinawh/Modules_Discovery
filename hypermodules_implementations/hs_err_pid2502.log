@@ -1,0 +1,88 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: pthread_getattr_np
+#
+#  Internal Error (os_linux_x86.cpp:681), pid=2502, tid=140296417429248
+#  Error: pthread_getattr_np
+#
+# JRE version: 6.0_21-b06
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0-b16 mixed mode linux-amd64 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fad34149800):  JavaThread "pool-1-thread-21" [_thread_new, id=2567, stack(0x0000000000000000,0x0000000000000000)]
+
+Stack: [0x0000000000000000,0x0000000000000000],  sp=0x00007f994e1fba80,  free space=e65387ee0000000000000018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x730610]
+V  [libjvm.so+0x2f3168]
+V  [libjvm.so+0x5f9e73]
+V  [libjvm.so+0x5f9aa5]
+V  [libjvm.so+0x6ee363]
+V  [libjvm.so+0x5f80df]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007fad3414d800 JavaThread "pool-1-thread-23" [_thread_new, id=2569, stack(0x0000000000000000,0x0000000000000000)]
+  0x00007fad3414b800 JavaThread "pool-1-thread-22" [_thread_new, id=2568, stack(0x0000000000000000,0x0000000000000000)]
+=>0x00007fad34149800 JavaThread "pool-1-thread-21" [_thread_new, id=2567, stack(0x0000000000000000,0x0000000000000000)]
+  0x00007fad34147800 JavaThread "pool-1-thread-20" [_thread_in_Java, id=2566, stack(0x00007f994e1fd000,0x00007f994ebfe000)]
+  0x00007fad34146000 JavaThread "pool-1-thread-19" [_thread_in_Java, id=2565, stack(0x00007f994ebfe000,0x00007f994f5ff000)]
+  0x00007fad34144000 JavaThread "pool-1-thread-18" [_thread_in_Java, id=2564, stack(0x00007f994f5ff000,0x00007f9950000000)]
+  0x00007fad34142000 JavaThread "pool-1-thread-17" [_thread_in_Java, id=2563, stack(0x00007f99683fa000,0x00007f9968dfb000)]
+  0x00007fad34140000 JavaThread "pool-1-thread-16" [_thread_in_Java, id=2562, stack(0x00007f9968dfb000,0x00007f99697fc000)]
+  0x00007fad3413e000 JavaThread "pool-1-thread-15" [_thread_in_Java, id=2561, stack(0x00007f99697fc000,0x00007f996a1fd000)]
+  0x00007fad3413c000 JavaThread "pool-1-thread-14" [_thread_in_Java, id=2560, stack(0x00007f996a1fd000,0x00007f996abfe000)]
+  0x00007fad3413a000 JavaThread "pool-1-thread-13" [_thread_in_Java, id=2559, stack(0x00007f996abfe000,0x00007f996b5ff000)]
+  0x00007fad34138800 JavaThread "pool-1-thread-12" [_thread_in_Java, id=2558, stack(0x00007f996b5ff000,0x00007f996c000000)]
+  0x00007fad34136800 JavaThread "pool-1-thread-11" [_thread_in_Java, id=2557, stack(0x00007f99803fa000,0x00007f9980dfb000)]
+  0x00007fad34135800 JavaThread "pool-1-thread-10" [_thread_in_vm, id=2556, stack(0x00007f9980dfb000,0x00007f99817fc000)]
+  0x00007fad34127000 JavaThread "pool-1-thread-9" [_thread_in_Java, id=2555, stack(0x00007f99817fc000,0x00007f99821fd000)]
+  0x00007fad34125000 JavaThread "pool-1-thread-8" [_thread_in_Java, id=2554, stack(0x00007f99821fd000,0x00007f9982bfe000)]
+  0x00007fad34123000 JavaThread "pool-1-thread-7" [_thread_in_Java, id=2553, stack(0x00007f9982bfe000,0x00007f99835ff000)]
+  0x00007fad34121000 JavaThread "pool-1-thread-6" [_thread_in_Java, id=2552, stack(0x00007f99835ff000,0x00007f9984000000)]
+  0x00007fad340ed000 JavaThread "pool-1-thread-5" [_thread_in_Java, id=2551, stack(0x00007f99a03fa000,0x00007f99a0dfb000)]
+  0x00007fad340eb800 JavaThread "pool-1-thread-4" [_thread_in_Java, id=2550, stack(0x00007f99a0dfb000,0x00007f99a17fc000)]
+  0x00007fad340e9800 JavaThread "pool-1-thread-3" [_thread_in_Java, id=2549, stack(0x00007f99a17fc000,0x00007f99a21fd000)]
+  0x00007fad340e8800 JavaThread "pool-1-thread-2" [_thread_in_Java, id=2548, stack(0x00007f99a21fd000,0x00007f99a2bfe000)]
+  0x00007fad3412b800 JavaThread "pool-1-thread-1" [_thread_in_Java, id=2547, stack(0x00007f99a2bfe000,0x00007f99a35ff000)]
+  0x00007fad340dc000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=2533, stack(0x00007f99a35ff000,0x00007f99a4000000)]
+  0x00007fad340da000 JavaThread "CompilerThread1" daemon [_thread_in_native, id=2532, stack(0x00007f9a188dd000,0x00007f9a189de000)]
+  0x00007fad340d7000 JavaThread "CompilerThread0" daemon [_thread_in_native, id=2531, stack(0x00007f9a189de000,0x00007f9a18adf000)]
+  0x00007fad340d5000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2530, stack(0x00007f9a18adf000,0x00007f9a194e0000)]
+  0x00007fad340b5800 JavaThread "Finalizer" daemon [_thread_blocked, id=2529, stack(0x00007f9a19669000,0x00007f9a1a06a000)]
+  0x00007fad340b4000 JavaThread "Reference Handler" daemon [_thread_blocked, id=2528, stack(0x00007f9a1a06a000,0x00007f9a1aa6b000)]
+  0x00007fad34006800 JavaThread "main" [_thread_in_vm, id=2503, stack(0x00007fad3a77f000,0x00007fad3a880000)]
+
+Other Threads:
+  0x00007fad340af800 VMThread [stack: 0x00007f9a1aa6b000,0x00007f9a1ab6c000] [id=2527]
+  0x00007fad340ee800 WatcherThread [stack: 0x00007f9a187dc000,0x00007f9a188dd000] [id=2534]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 4205568K, used 2517231K [0x00007fa6dbab0000, 0x00007fa7dd590000, 0x00007fad31000000)
+  eden space 4192576K, 60% used [0x00007fa6dbab0000,0x00007fa775347c28,0x00007fa7db900000)
+  from space 12992K, 12% used [0x00007fa7dc6c0000,0x00007fa7dc864048,0x00007fa7dd370000)
+  to   space 14080K, 0% used [0x00007fa7db900000,0x00007fa7db900000,0x00007fa7dc6c0000)
+ PSOldGen        total 1398144K, used 9979K [0x00007f9a31000000, 0x00007f9a86560000, 0x00007fa6dbab0000)
+  object space 1398144K, 0% used [0x00007f9a31000000,0x00007f9a319beca0,0x00007f9a86560000)
+ PSPermGen       total 21248K, used 3649K [0x00007f9a2bc00000, 0x00007f9a2d0c0000, 0x00007f9a31000000)
+  object space 21248K, 17% used [0x00007f9a2bc00000,0x00007f9a2bf90740,0x00007f9a2d0c0000)
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 00:25 4518898988                         /oicr/x86_64/lib/jvm/jdk1.6.0_21/bin/java
+40108000-4010a000 rwxp 00008000 00:25 4518898988                         /oicr/x86_64/lib/jvm/jdk1.6.0_21/bin/java
+41078000-41099000 rwxp 00000000 00:00 0                                  [heap]
+7f993c000000-7f993c021000 rwxp 00000000 00:00 0 
+7f993c021000-7f9940000000 ---p 00000000 00:00 0 
+7f9940000000-7f9940021000 rwxp 00000000 00:00 0 
+7f9940021000-7f99440000
